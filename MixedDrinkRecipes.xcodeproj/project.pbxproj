@@ -56,12 +56,28 @@
 			children = (
 				F49D0ABB20A6904C0048EC98 /* AppDelegate.swift */,
 				F49D0ABD20A6904C0048EC98 /* ViewController.swift */,
-				F49D0ABF20A6904C0048EC98 /* Main.storyboard */,
-				F49D0AC220A6904E0048EC98 /* Assets.xcassets */,
-				F49D0AC420A6904E0048EC98 /* LaunchScreen.storyboard */,
-				F49D0AC720A6904E0048EC98 /* Info.plist */,
+				F49D0ACE20A691810048EC98 /* Storyboards */,
+				F49D0ACD20A691780048EC98 /* Resources */,
 			);
 			path = MixedDrinkRecipes;
+			sourceTree = "<group>";
+		};
+		F49D0ACD20A691780048EC98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F49D0AC220A6904E0048EC98 /* Assets.xcassets */,
+				F49D0AC720A6904E0048EC98 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F49D0ACE20A691810048EC98 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F49D0AC420A6904E0048EC98 /* LaunchScreen.storyboard */,
+				F49D0ABF20A6904C0048EC98 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
