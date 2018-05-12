@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F44C415A20A6D42F004DEF19 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C415920A6D42F004DEF19 /* User.swift */; };
+		F44C415C20A6D719004DEF19 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C415B20A6D719004DEF19 /* CloudKitManager.swift */; };
 		F49D0ABC20A6904C0048EC98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D0ABB20A6904C0048EC98 /* AppDelegate.swift */; };
-		F49D0ABE20A6904C0048EC98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D0ABD20A6904C0048EC98 /* ViewController.swift */; };
 		F49D0AC120A6904C0048EC98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49D0ABF20A6904C0048EC98 /* Main.storyboard */; };
 		F49D0AC320A6904E0048EC98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49D0AC220A6904E0048EC98 /* Assets.xcassets */; };
 		F49D0AC620A6904E0048EC98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49D0AC420A6904E0048EC98 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F44C415420A6D283004DEF19 /* MixedDrinkRecipes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MixedDrinkRecipes.entitlements; sourceTree = "<group>"; };
+		F44C415920A6D42F004DEF19 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F44C415B20A6D719004DEF19 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		F49D0AB820A6904C0048EC98 /* MixedDrinkRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixedDrinkRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49D0ABB20A6904C0048EC98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F49D0ABD20A6904C0048EC98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F49D0AC020A6904C0048EC98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F49D0AC220A6904E0048EC98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F49D0AC520A6904E0048EC98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +38,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F44C415520A6D3DF004DEF19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F44C415620A6D3E4004DEF19 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F44C415720A6D3EC004DEF19 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F44C415B20A6D719004DEF19 /* CloudKitManager.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		F44C415820A6D3F5004DEF19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F44C415920A6D42F004DEF19 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F49D0AAF20A6904C0048EC98 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +87,12 @@
 		F49D0ABA20A6904C0048EC98 /* MixedDrinkRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				F44C415420A6D283004DEF19 /* MixedDrinkRecipes.entitlements */,
 				F49D0ABB20A6904C0048EC98 /* AppDelegate.swift */,
-				F49D0ABD20A6904C0048EC98 /* ViewController.swift */,
+				F44C415820A6D3F5004DEF19 /* Model */,
+				F44C415720A6D3EC004DEF19 /* Model Controllers */,
+				F44C415620A6D3E4004DEF19 /* View Controllers */,
+				F44C415520A6D3DF004DEF19 /* Views */,
 				F49D0ACE20A691810048EC98 /* Storyboards */,
 				F49D0ACD20A691780048EC98 /* Resources */,
 			);
@@ -112,6 +149,11 @@
 				TargetAttributes = {
 					F49D0AB720A6904C0048EC98 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -151,8 +193,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F49D0ABE20A6904C0048EC98 /* ViewController.swift in Sources */,
+				F44C415A20A6D42F004DEF19 /* User.swift in Sources */,
 				F49D0ABC20A6904C0048EC98 /* AppDelegate.swift in Sources */,
+				F44C415C20A6D719004DEF19 /* CloudKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,9 +339,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MixedDrinkRecipes/MixedDrinkRecipes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XKKD39W87S;
-				INFOPLIST_FILE = MixedDrinkRecipes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MixedDrinkRecipes/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,9 +358,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MixedDrinkRecipes/MixedDrinkRecipes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XKKD39W87S;
-				INFOPLIST_FILE = MixedDrinkRecipes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MixedDrinkRecipes/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
