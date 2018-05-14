@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		F44C415A20A6D42F004DEF19 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C415920A6D42F004DEF19 /* User.swift */; };
 		F44C415C20A6D719004DEF19 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C415B20A6D719004DEF19 /* CloudKitManager.swift */; };
+		F44C415E20A77F6C004DEF19 /* UserModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C415D20A77F6C004DEF19 /* UserModelController.swift */; };
+		F44C416020A783B3004DEF19 /* LoadScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C415F20A783B3004DEF19 /* LoadScreenViewController.swift */; };
+		F44C416220A78A00004DEF19 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C416120A78A00004DEF19 /* SignUpViewController.swift */; };
+		F44C416420A78C65004DEF19 /* SignedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C416320A78C65004DEF19 /* SignedInViewController.swift */; };
+		F44C416720A78E56004DEF19 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44C416620A78E56004DEF19 /* CloudKit.framework */; };
+		F44C416920A795A4004DEF19 /* DrinkListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C416820A795A4004DEF19 /* DrinkListTableViewController.swift */; };
+		F44C416B20A799CC004DEF19 /* DrinkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C416A20A799CC004DEF19 /* DrinkDetailViewController.swift */; };
 		F49D0ABC20A6904C0048EC98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D0ABB20A6904C0048EC98 /* AppDelegate.swift */; };
 		F49D0AC120A6904C0048EC98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49D0ABF20A6904C0048EC98 /* Main.storyboard */; };
 		F49D0AC320A6904E0048EC98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49D0AC220A6904E0048EC98 /* Assets.xcassets */; };
@@ -19,6 +26,13 @@
 		F44C415420A6D283004DEF19 /* MixedDrinkRecipes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MixedDrinkRecipes.entitlements; sourceTree = "<group>"; };
 		F44C415920A6D42F004DEF19 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F44C415B20A6D719004DEF19 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		F44C415D20A77F6C004DEF19 /* UserModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelController.swift; sourceTree = "<group>"; };
+		F44C415F20A783B3004DEF19 /* LoadScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadScreenViewController.swift; sourceTree = "<group>"; };
+		F44C416120A78A00004DEF19 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F44C416320A78C65004DEF19 /* SignedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInViewController.swift; sourceTree = "<group>"; };
+		F44C416620A78E56004DEF19 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		F44C416820A795A4004DEF19 /* DrinkListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkListTableViewController.swift; sourceTree = "<group>"; };
+		F44C416A20A799CC004DEF19 /* DrinkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailViewController.swift; sourceTree = "<group>"; };
 		F49D0AB820A6904C0048EC98 /* MixedDrinkRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixedDrinkRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49D0ABB20A6904C0048EC98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F49D0AC020A6904C0048EC98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44C416720A78E56004DEF19 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +63,11 @@
 		F44C415620A6D3E4004DEF19 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F44C415F20A783B3004DEF19 /* LoadScreenViewController.swift */,
+				F44C416120A78A00004DEF19 /* SignUpViewController.swift */,
+				F44C416320A78C65004DEF19 /* SignedInViewController.swift */,
+				F44C416820A795A4004DEF19 /* DrinkListTableViewController.swift */,
+				F44C416A20A799CC004DEF19 /* DrinkDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -56,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				F44C415B20A6D719004DEF19 /* CloudKitManager.swift */,
+				F44C415D20A77F6C004DEF19 /* UserModelController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -68,11 +89,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F44C416520A78E56004DEF19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F44C416620A78E56004DEF19 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F49D0AAF20A6904C0048EC98 = {
 			isa = PBXGroup;
 			children = (
 				F49D0ABA20A6904C0048EC98 /* MixedDrinkRecipes */,
 				F49D0AB920A6904C0048EC98 /* Products */,
+				F44C416520A78E56004DEF19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +180,9 @@
 					F49D0AB720A6904C0048EC98 = {
 						CreatedOnToolsVersion = 9.3;
 						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
 							com.apple.iCloud = {
 								enabled = 1;
 							};
@@ -193,9 +226,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44C416920A795A4004DEF19 /* DrinkListTableViewController.swift in Sources */,
+				F44C416220A78A00004DEF19 /* SignUpViewController.swift in Sources */,
+				F44C416420A78C65004DEF19 /* SignedInViewController.swift in Sources */,
+				F44C415E20A77F6C004DEF19 /* UserModelController.swift in Sources */,
+				F44C416020A783B3004DEF19 /* LoadScreenViewController.swift in Sources */,
 				F44C415A20A6D42F004DEF19 /* User.swift in Sources */,
 				F49D0ABC20A6904C0048EC98 /* AppDelegate.swift in Sources */,
 				F44C415C20A6D719004DEF19 /* CloudKitManager.swift in Sources */,
+				F44C416B20A799CC004DEF19 /* DrinkDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
